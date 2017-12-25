@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "204176719630",
+    "firebase_url": "https://burglaralert-44acf.firebaseio.com",
+    "project_id": "burglaralert-44acf",
+    "storage_bucket": "burglaralert-44acf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204176719630:android:9a735da934dab055",
+        "android_client_info": {
+          "package_name": "pranav.preons.burglaralert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204176719630-n3v3pdd4fq1glna3qd1m0r21cgsi80ph.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pranav.preons.burglaralert",
+            "certificate_hash": "c974b1266a59fd5337d45bc8e8a63610f9472930"
+          }
+        },
+        {
+          "client_id": "204176719630-l14i0ic4r54bedgohrrfdhd2d1p5e3fj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfMDSpkSBY6u-QLggwJlaVi3a023hDegA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204176719630-l14i0ic4r54bedgohrrfdhd2d1p5e3fj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

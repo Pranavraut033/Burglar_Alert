@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Burglar Alert</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="wifi_channel">Wifi Monitor</string>
+    <string name="wifi_channel_description">Shows Current Wifi state</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="admin_description">This permission is required for enhanced security</string>
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_header_sounds">Sounds</string>
+
+    <string name="pref_title_ringtone">Notification</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="settings">Settings</string>
+    <string name="pref_default_message">Recent location of stolen/lost device is (%lat, %long). Click the link to view on google map (%url)\n - %name (%date %time)</string>
+    <string name="pref_title_on_stolen">Select alarm sound to use when stolen</string>
+    <string name="pref_title_bag_open_notifications">Notify on Smart Bag unzipped</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="pass_description">Only correct password can stop alarm</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_0">0</string>
+    <string name="delete">delete</string>
+    <string name="_7">7</string>
+    <string name="action_settings">Setting</string>
+    <string name="no_internet">No network connection available.</string>
+    <string name="require_google_play_service">This app requires Google Play Services. Please install Google Play Services on your device and relaunch this app.</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

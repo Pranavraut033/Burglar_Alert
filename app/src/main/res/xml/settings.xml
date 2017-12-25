@@ -1,0 +1,104 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_header_general">
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_display_name"
+            android:inputType="textCapWords"
+            android:key="user_name"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_display_name" />
+
+        <!--\n\t%addr:\t\tAddress Line-->
+
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_message"
+            android:dialogMessage="Replacements:\n\t%name:\t\tName\n\t%date:\t\t\tToday's date\n\t%time:\t\t\tCurrent time\n\t%lat:\t\t\t\t\tLatitude\n\t%long:\t\t\tLongitude\n\t%url:\t\t\t\t\tGoogle map's link"
+            android:inputType="textAutoComplete"
+            android:key="msg_text"
+            android:maxLength="240"
+            android:selectAllOnFocus="false"
+            android:title="Default message" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="vibrate"
+            android:summary="Enable or disable to vibrate device on various events"
+            android:title="@string/pref_title_vibrate" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_header_sounds">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="notifications_on_bag_open"
+            android:title="@string/pref_title_bag_open_notifications" />
+
+        <RingtonePreference
+            android:defaultValue="content://settings/system/notifications_sound"
+            android:dependency="notifications_on_bag_open"
+            android:key="notifications_on_bag_open_ringtone"
+            android:ringtoneType="notification"
+            android:title="@string/pref_title_ringtone" />
+
+        <RingtonePreference
+            android:defaultValue="content://settings/system/alarm_sound"
+            android:key="alarm_on_out_of_range"
+            android:ringtoneType="alarm"
+            android:title="@string/pref_title_on_stolen" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Security">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="send_sms"
+            android:summary="Send real time location to the back up number"
+            android:title="Send SMS to Back-up number" />
+
+        <EditTextPreference
+            android:dependency="send_sms"
+            android:inputType="phone"
+            android:key="phone_number"
+            android:maxLength="13"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="This may cost real money"
+            android:title="Phone Number" />
+
+        <EditTextPreference
+            android:defaultValue="1234"
+            android:inputType="number"
+            android:key="password"
+            android:maxLength="6"
+            android:summary="This password is required to stop the service"
+            android:title="Setup/Change Pin Password" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="auto_mail"
+            android:title="Automated mail" />
+
+
+        <EditTextPreference
+            android:defaultValue="preon.inc@gmail.com"
+            android:dependency="auto_mail"
+            android:inputType="textEmailAddress"
+            android:key="back_up_mail"
+            android:selectAllOnFocus="true"
+            android:summary="The captured photos will be send to this email address"
+            android:title="Backup Email Address" />
+
+        <Preference
+            android:dependency="auto_mail"
+            android:key="accountName"
+            android:title="Select account">
+            <intent
+                android:action="pranav.gmail.auth"
+                android:targetClass="pranav.preons.burglaralert.GMailAuth"
+                android:targetPackage="pranav.preons.burglaralert" />l
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>
